@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aaaaaaaaaaaaaaaaaaa.css">
+    <title>15</title>
+</head>
+<body>
+    <div class="vdd">
+        <div class="a">
+            <a href="index.html">Voltar para página inicial</a>
+        </div>
+        <div class="b">
+            <a href="index16.html">Próximo exercicío</a>
+        </div>
+    </div>
+
+    <script>
+         var nome;
+        var idade;
+        var salario;
+        var sexo;
+        var estacivil;
+
+        nome=prompt(" Digite seu nome: ");
+
+        while (nome.length<=3) {
+            alert("Nome inválido. \n Nome tem que ter mais de três letras!");
+            nome=prompt("Digite seu nome novamente:");
+        }
+
+        idade=prompt(" Digite sua idade: ");
+        idade=parseFloat(idade)
+
+        while (idade<0 || idade>150) {
+            alert(" Idade inválida.\n A idade deve estar entre 0 a 150 (sim, 150)");
+            idade=prompt("Digite sua idade novamente: ");
+            idade=parseFloat(idade);
+        }
+
+        salario=prompt("Digite seu salário:");
+        salario=parseFloat(salario);
+
+        while (salario<=0) {
+            alert(" Salário inválido. \n O salário deve ser maior que zero (ou você não tem salário)");
+            salario = prompt(" Digite o salário novamente: ");
+            salario=parseFloat(salario);
+        }
+
+        sexo=prompt(" Digite seu sexo: \n (f - feminino / m - masculino) ");
+
+        while (sexo!=='f' && sexo!=='m') {
+            alert(" Sexo inválido. \n O sexo deve ser 'f' ou 'm'. ");
+            sexo = prompt(" Digite o sexo novamente: \n (f - feminino / m - masculino) ");
+        }
+
+        estacivil=prompt(" Digite seu estado civil: \n (s - solteiro(a), c - casado(a), v - viúvo(a), d - divorciado(a)) ");
+
+        while (estacivil!=='s' && estacivil!=='c' && estacivil!=='v' && estacivil!=='d') {
+            alert(" Estado civil inválido. \n O estado civil deve ser 's', 'c', 'v' ou 'd'. (NAMORO NÃO CONTA)");
+            estacivil=prompt(" Digite o estado civil novamente: \n (s - solteiro(a), c - casado(a), v - viúvo(a), d - divorciado(a)) ");  
+        }
+
+        alert(" Informações válidas, boa noite! ");
+
+    </script>
+</body>
+</html>

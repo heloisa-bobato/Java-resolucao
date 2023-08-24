@@ -1,0 +1,26 @@
+body{
+   background-color: rgb(83, 117, 219);
+}
+
+.vdd{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 36px;
+    margin-top: 160px;
+}
+
+.b{
+    margin-top: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: midnightblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    color: midnightblue;
+    font-size: 20px;
+}

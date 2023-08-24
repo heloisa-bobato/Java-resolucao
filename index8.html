@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aaaaaaaaaaaaaaaaaaa.css">
+    <title>8</title>
+</head>
+<body>
+    <div class="vdd">
+        <div class="a">
+            <a href="index.html">Voltar para página inicial</a>
+        </div>
+        <div class="b">
+            <a href="index9.html">Próximo exercicío</a>
+        </div>
+    </div>
+    <script>
+        var num1;
+        var num2;
+        var num3;
+        num1=prompt("Digite o 1º valor:");
+        num1=parseFloat(num1);
+        num2=prompt("Digite o 2º valor:");
+        num2=parseFloat(num2);
+        num3=prompt("Digite o 3º valor:");
+        num3=parseFloat(num3);
+        if(num1>num2&&num2>num3){
+            alert("o 1º é " +num1+ " o 2º é " +num2+ " e o 3º é " +num3);
+        }
+        else if(num1>num3&&num3>num2){
+            alert("o 1º é " +num1+ " o 2º é " +num3+ " e o 3º é " +num2);
+        }
+        else if(num2>num1&&num1>num3){
+            alert("o 1º é " +num2+ " o 2º é " +num1+ " e o 3º é " +num3);
+        }
+        else if(num2>num3&&num3>num1){
+            alert("o 1º é " +num2+ " o 2º é " +num3+ " e o 3º é " +num1);
+        }
+        else if(num3>num1&&num1>num2){
+            alert("o 1º é " +num3+ " o 2º é " +num1+ " e o 3º é " +num2);
+        }
+        else if(num3>num2&&num2>num1){
+            alert("o 1º é " +num3+ " o 2º é " +num2+ " e o 3º é " +num1);
+        }
+    </script>
+</body>
+</html>
